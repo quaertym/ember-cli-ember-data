@@ -16,7 +16,7 @@ function unwatchedTree(dir) {
 }
 
 EmberCLIED.prototype.treeFor = function treeFor(name) {
-  var treePath =  path.join('node_modules/ember-cli-ember-data', name);
+  var treePath = path.join('node_modules/ember-cli-ember-data', name);
 
   if (fs.existsSync(treePath)) {
     return unwatchedTree(treePath);
@@ -27,12 +27,12 @@ EmberCLIED.prototype.included = function included(app) {
   this.app = app;
 
   if (this.app.env !== 'production') {
-    this.app.import('data.prod.js');
+    this.app.import('vendor/data.prod.js');
   }
 
   if (this.app.env !== 'development') {
-    this.app.import('data.js');
+    this.app.import('vendor/data.js');
   }
 };
 
-module.exports = EmberCLIPretender;
+module.exports = EmberCLIED;
