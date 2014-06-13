@@ -27,11 +27,11 @@ EmberCLIED.prototype.included = function included(app) {
   this.app = app;
 
   if (this.app.env !== 'production') {
-    this.app.import('vendor/data.prod.js');
+    this.app.import('vendor/ember-data/data.prod.js');
   }
 
   if (this.app.env !== 'development') {
-    this.app.import('vendor/data.js');
+    this.app.import('vendor/ember-data/data.js');
   }
 };
 
