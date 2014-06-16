@@ -27,9 +27,9 @@ EmberCLIED.prototype.included = function included(app) {
   this.app = app;
 
   if (this.app.env === 'production') {
-    this.app.import('vendor/ember-data/data.prod.js');
+    this.app.import('vendor/ember-data/ember-data.prod.js');
   } else {
-    this.app.import('vendor/ember-data/data.js');
+    this.app.import('vendor/ember-data/ember-data.js');
   }
 };
 
