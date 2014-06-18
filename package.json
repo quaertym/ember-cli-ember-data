@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-ember-data",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Include Ember Data into am ember-cli application.",
   "main": "index.js",
   "scripts": {
