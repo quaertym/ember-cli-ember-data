@@ -10,5 +10,13 @@
     "ember-cli-addon"
   ],
   "author": "Alex Navasadyan",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/twokul/ember-cli-ember-data.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twokul/ember-cli-ember-data/issues"
+  },
+  "homepage": "https://github.com/twokul/ember-cli-ember-data"
 }
