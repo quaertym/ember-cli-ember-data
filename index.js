@@ -25,11 +25,16 @@ EmberCLIED.prototype.treeFor = function treeFor(name) {
 
 EmberCLIED.prototype.included = function included(app) {
   this.app = app;
+  var modules = {
+    'ember-data': [
+      'default'
+    ]
+  };
 
   if (this.app.env === 'production') {
-    this.app.import('vendor/ember-data/ember-data.prod.js');
+    this.app.import('vendor/ember-data/ember-data.prod.js', modules);
   } else {
-    this.app.import('vendor/ember-data/ember-data.js');
+    this.app.import('vendor/ember-data/ember-data.js', modules);
   }
 };
 
